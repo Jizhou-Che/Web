@@ -1,0 +1,27 @@
+body{
+	text-align: center;
+	font-family: Arial;
+	font-size: 40px;
+	background-image: url(background.jpg);
+	background-repeat: no-repeat;
+}
+
+label{
+	font-size: 20px;
+}
+
+#groupCount{
+	width: 100px;
+	font-size: 20px;
+}
+
+#randomGrouping{
+	width: 200px;
+	font-size: 20px;
+}
+
+#animate{
+	margin-top: 0px;
+	background-color: #ffff80;
+	opacity: 0.8;
+}
