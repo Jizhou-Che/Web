@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<title>video+canvas</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<div id="videoContainer">
+			<video id="video" width="1280" height="720" src="video.mp4"></video>
+			<canvas id="buffer" width="1280" height="720"></canvas>
+			<canvas id="display" width="1280" height="720"></canvas>
+		</div>
+		<div>
+			<form>
+				<label for="progress">progress</label>
+				<input id="progress" type="range" min="0" max="1000" step="1" value="0">
+				<br><br>
+				<input class="buttons" id="pause" type="button" value="pause">
+				<input class="buttons" id="play" type="button" value="play">
+				<br><br>
+				<input class="buttons" id="pure" type="button" value="pure">
+				<input class="buttons" id="noir" type="button" value="noir">
+				<input class="buttons" id="western" type="button" value="western">
+				<input class="buttons" id="scifi" type="button" value="scifi">
+				<input class="buttons" id="bwcartoon" type="button" value="bwcartoon">
+			</form>
+		</div>
+	<script src="index.js"></script>
+	</body>
+</html>
