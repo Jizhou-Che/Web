@@ -2,11 +2,11 @@ var counting;
 
 window.onload = function(){
 	resize();
-	document.getElementById("button").onclick = Count;
+	document.getElementById("button").onclick = count;
 };
 
-function Count(){
-	document.getElementById("button").onclick = Stop;
+function count(){
+	document.getElementById("button").onclick = stop;
 	var from = parseFloat(document.getElementById("from").value);
 	var to = parseFloat(document.getElementById("to").value);
 	if(from <= to && from % 1 == 0 && to % 1 == 0){
@@ -21,8 +21,8 @@ function Count(){
 	}
 }
 
-function Stop(){
-	document.getElementById("button").onclick = Count;
+function stop(){
+	document.getElementById("button").onclick = count;
 	document.getElementById("button").innerHTML = "Start!";
 	document.getElementById("from").disabled = false;
 	document.getElementById("to").disabled = false;
